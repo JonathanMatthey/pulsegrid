@@ -1,0 +1,466 @@
+ <html class="nk">
+ <head>
+   <title></title>
+   <link rel="stylesheet" href="css/p5b-css-landing-page.css"> 
+   <!-- <link rel="stylesheet" href="css/pulsegrid.css"> 
+   -->
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+   <script src="js/pulsegrid.js"></script>
+
+   <style>
+   .is-offstage{
+    display: none!important;
+   }
+   </style>
+
+ </head>
+ <body>
+  <div style="font-size:1.5em">
+    <b>TOFUCKINDO</b><br/>
+    - fix overlay<br/>
+    - refactor / simplify js code<br/>
+    - refactor / simplify css<br/>
+  </div>
+   <div id="main-section">
+     <section class="pulse-section">
+       <div class="pulse-container section-container" style="max-width:1370px;">
+         <header>
+           <h1>Pulse Grid</h1>
+           <nav>
+             <!--<div class="filter-arrangement"> 
+             <div class="latest">
+               <a href="#">Latest</a>
+             </div>
+             <div class="popular is-active">
+               <a href="#">Most Popular</a>
+             </div>
+           </div>
+           -->
+           <!-- <div class="filter-type" data-affects="#pulse-grid"> 
+           <div class="all is-active">
+             <a class="ir">All</a>
+           </div>
+           <div class="fb" data-type="fb">
+             <a href="#" class="ir">Facebook</a>
+           </div>
+           <div class="tw" data-type="tw">
+             <a href="#" class="ir">Twitter</a>
+           </div>
+           <div class="fb" data-type="fb">
+             <a href="#" class="ir">Nike</a>
+           </div>
+           <div class="yt" data-type="yt">
+             <a href="#" class="ir">YouTube</a>
+           </div>
+           <div class="ig" data-type="ig">
+             <a href="#" class="ir">Instagram</a>
+           </div>
+         </div>
+         -->
+       </nav>
+     </header>
+     <div id="pulse-grid" class="pulse-section-grid pulse-section-grid-varied">
+       <div class="pulse-section-items-container">
+         <div class="dyn-card item-1 slidein" data-type="ig" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="">
+               <div class="card incoming">
+                 <img src="http://placekitten.com/220/220?image=11"> 
+                 <div class="pulse-item-info">
+                   <p>Don't just own the gym today. Look good doing it.</p>
+                   <div class="handle">via @nikewomen</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="card outgoing">
+                 <img src="http://placekitten.com/220/220?image=9"> 
+                 <div class="pulse-item-info">
+                   <p>Don't just own the gym today. Look good doing it.</p>
+                   <div class="handle">via @nikemen</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div data-type="fb" class="dyn-card item-2 slidein" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="-webkit-transform: translate3d(220px, 0, 0);">
+               <div class="card no-image outgoing">
+                 <div class="pulse-item-info">
+                   <p>
+                     Find out how to
+                get noticed in #TheChance: http://gonike.me/...
+                   </p>
+                   <div class="handle">via @nikefootball</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="card incoming">
+                 <img src="http://placekitten.com/220/220?image=1" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     Find out how to
+                get noticed in #TheChance: http://gonike.me/...
+                   </p>
+                   <div class="handle">via @lorem</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div data-type="ig" class="dyn-card item-3 slidein" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="">
+               <div class="card outgoing">
+                 <img src="http://placekitten.com/445/445?image=5" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     Find out how to
+                get noticed in #TheChance: http://gonike.me/...
+                   </p>
+                   <div class="handle">via @nikefootball</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="card incoming">
+                 <img src="http://placekitten.com/445/445?image=2" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     Find out how to
+                get noticed in #TheChance: http://gonike.me/...
+                   </p>
+                   <div class="handle">via @lorem</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div data-type="yt" style="display:none;">
+           <a href="#">
+             <img src="http://placekitten.com/220/220?image=5" alt=""> 
+             <div class="pulse-item-info">
+               <span class="ir">Play Video</span>
+             </div>
+             <span class="pulse-item-icon"></span>
+           </a>
+         </div>
+         <div data-type="tw" class="dyn-card item-4 slidein" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="">
+               <div class="card incoming">
+                 <img src="http://placekitten.com/220/220?image=4" alt=""></div>
+               <div class="card no-image outgoing">
+                 <div class="pulse-item-info">
+                   <p>Time to #makeitcount</p>
+                   <div class="handle">via @lorem</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+
+             </div>
+           </a>
+         </div>
+         <div class="dyn-card item-5 slidein" data-type="tw" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="">
+               <div class="card no-image incoming">
+                 <div class="pulse-item-info">
+                   <p>
+                     Introducing
+                     <br>The Hyperfuse</p>
+                   <div class="handle">via @nikesportswear</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="card outgoing">
+                 <img src="http://placekitten.com/220/220?image=6" alt=""></div>
+             </div>
+           </a>
+         </div>
+         <div data-type="fb" class="dyn-card item-6 slidein" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="">
+               <div class="card outgoing">
+                 <img src="http://placekitten.com/220/220?image=3" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>Flyknit sighting at 21 Mercer in NYC.</p>
+                   <div class="handle">via @nikesportswear</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="card incoming">
+                 <img src="http://placekitten.com/220/220?image=7" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>Flyknit sighting at 21 Mercer in NYC.</p>
+                   <div class="handle">via @lorem</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div data-type="fb" class="dyn-card item-7 slidein" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="">
+               <div class="card incoming">
+                 <img src="http://placekitten.com/445/445?image=9" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>Where do you love to run in your city? Let us know.</p>
+                   <div class="handle">via @nikerunning</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="card outgoing">
+                 <img src="http://placekitten.com/445/445?image=8" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>Where do you love to run in your city? Let us know.</p>
+                   <div class="handle">via @lorem</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div class="dyn-card item-8 slidein" data-type="ig" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="">
+               <div class="card outgoing">
+                 <img src="http://placekitten.com/220/220?image=11" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     The season has begun! Get geared up with new baselayer products.
+                   </p>
+                   <div class="handle">via @nikebaseball</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="card incoming">
+                 <img src="http://placekitten.com/220/220?image=12" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     The season has begun! Get geared up with new baselayer products.
+                   </p>
+                   <div class="handle">via @lorem</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div data-type="fb" class="dyn-card item-9 slidein" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="">
+               <div class="card incoming">
+                 <img src="http://placekitten.com/220/220?image=15" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     Introducing
+                     <br>the USA Nike Hyper Elite Uniform.</p>
+                   <div class="handle">via @nikebasketball</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="card outgoing">
+                 <img src="http://placekitten.com/220/220?image=14" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     Introducing
+                     <br>the USA Nike Hyper Elite Uniform.</p>
+                   <div class="handle">via @nikebasketball</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div data-type="ig" class="dyn-card item-10 slidein" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container" style="">
+               <div class="card incoming">
+                 <img src="http://placekitten.com/220/220?image=6" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     The morning of a race, try a 10-min “shake out” run to loosen up &amp; see...
+                   </p>
+                   <div class="handle">via @nikerunning</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="card outgoing">
+                 <img src="http://placekitten.com/220/220?image=12" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     The morning of a race, try a 10-min “shake out” run to loosen up &amp; see...
+                   </p>
+                   <div class="handle">via @nikerunning</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div data-type="yt" class="dyn-card item-11 slidein" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container">
+               <div class="outgoing card">
+                 <img src="http://placekitten.com/220/220?image=7" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     The morning of a race, try a 10-min “shake out” run to loosen up &amp; see...
+                   </p>
+                   <div class="handle">via @nikerunning</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="incoming card">
+                 <img src="http://placekitten.com/220/220?image=8" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     The morning of a race, try a 10-min “shake out” run to loosen up &amp; see...
+                   </p>
+                   <div class="handle">via @nikerunning</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div data-type="yt" class="dyn-card item-12 slidein" data-cardeffect="cube">
+           <a href="#">
+             <div class="card-container">
+               <div class="outgoing card">
+                 <img src="http://placekitten.com/220/220?image=13" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     The morning of a race, try a 10-min “shake out” run to loosen up &amp; see...
+                   </p>
+                   <div class="handle">via @nikerunning</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+               <div class="incoming card">
+                 <img src="http://placekitten.com/220/220?image=10" alt=""> 
+                 <div class="pulse-item-info">
+                   <p>
+                     The morning of a race, try a 10-min “shake out” run to loosen up &amp; see...
+                   </p>
+                   <div class="handle">via @nikerunning</div>
+                   <div class="time">1 day ago</div>
+                 </div>
+                 <span class="pulse-item-icon"></span>
+               </div>
+             </div>
+           </a>
+         </div>
+       </div>
+
+       <div class="pulse-overlay is-offstage is-translucent">
+         <div class="carousel-parent">
+           <div class="carousel-container">
+             <div class="carousel ui-draggable at-page-0" style="display: table; position: relative; padding: 0px; margin: 0px; width: 3780px; left: 0px;">
+               <div style="display: table-cell;">
+                 <div class="pulse-detail social-tout ig">
+                   <div class="pulse-detail-sidebar">
+                     <h3>NIKERUNNING</h3>
+                     <p>
+                       The Nike Pro
+                TurboSpeed suit
+                is built from approx 82%
+                recycled
+                polyester.
+                Speed for
+                a better world.
+                     </p>
+                     <div class="time">07:42 pm</div>
+                     <div class="share">
+                       <a href="#">
+                         <img src="img/homepage/share.png" alt=""></a>
+                     </div>
+                     <span class="bg-image"></span>
+                   </div>
+                   <div class="pulse-detail-content">
+                     <img src="http://placekitten.com/220/220?image=2" alt=""></div>
+                 </div>
+               </div>
+               <div style="display: table-cell;">
+                 <div class="pulse-detail social-tout fb">
+                   <div class="pulse-detail-sidebar">
+                     <h3>NIKEBASKETBALL</h3>
+                     <p>
+                       Introducing
+                the USA Nike Hyper Elite Uniform.
+                     </p>
+                     <div class="time">
+                       02:26 pm at Madison Square Garden, 4 Pennsylvania Plaza, New York, NY
+                     </div>
+                     <div class="share">
+                       <a href="#">
+                         <img src="img/homepage/share.png" alt=""></a>
+                     </div>
+                     <span class="bg-image"></span>
+                   </div>
+                   <div class="pulse-detail-content">
+                     <img src="http://placekitten.com/220/220?image=15" alt=""></div>
+                 </div>
+               </div>
+               <div style="display: table-cell;">
+                 <div class="pulse-detail social-tout yt">
+                   <div class="pulse-detail-sidebar">
+                     <h3>NIKE</h3>
+                     <p>
+                       Know your game. Raise your game. Nike+ Basketball measures how high, how quick and how hard you play. #innovate
+                     </p>
+                     <div class="time">11:08 am</div>
+                     <div class="share">
+                       <a href="#">
+                         <img src="img/homepage/share.png" alt=""></a>
+                     </div>
+                     <span class="bg-image"></span>
+                   </div>
+                   <div class="pulse-detail-content">
+                     <img src="http://placekitten.com/220/220?image=5" alt=""></div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <nav class="carousel-nav">
+             <div class="step">
+               <button class="prev is-inactive">&lt;</button>
+               <button class="next">&gt;</button>
+             </div>
+           </nav>
+         </div> <abbr class="close" title="Close overlay">×</abbr>
+       </div>
+     </div>
+
+   </div>
+ </section>
+
+ </div>
+ </body>
+ </html>
